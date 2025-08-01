@@ -10798,7 +10798,7 @@ $(document).on('click', '.dbtn2', function () {
     $('#depositmethod').val(o === null || o === void 0 ? void 0 : o.name);
     var o = window['cryptolist'][id];
     $(".header2 #short_name").text("".concat(o === null || o === void 0 ? void 0 : o.short_name));
-    $(".header2").find('img').attr('src', "../wp-admin/cryptoicons/".concat(o === null || o === void 0 ? void 0 : o.icon));
+    $(".header2").find('img').attr('src', "https://api.coinpayments.com/api/v1/currencies/".concat(o === null || o === void 0 ? void 0 : o.icon));
     if (typeof (o === null || o === void 0 ? void 0 : o.qr) == 'undefined') {
       $('#qr').hide();
     } else {
